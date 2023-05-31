@@ -60,7 +60,7 @@ const player04 : Player_2 = {
 }
 
 /** Parameter Type _ Function */
-// const, let 등 변수의 Type 지정 뿐만 아니라 Function의 Return 값에 대한 Type 지정도 가능하다.
+// const, let 등 변수의 Type 지정 뿐만 아니라 Function의 Parameter, Return 값에 대한 Type 지정도 가능하다.
 // Parameter의 Type 지정도 변수에서의 예와 마찬가지로 :+Type으로 명시하면 된다.
 function playerMaker(name : string) {
     return {
