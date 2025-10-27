@@ -1,0 +1,11 @@
+### Test Parameter in GET Request
+GET http://localhost:3000/movies/123123123
+
+### Test POST Request
+POST http://localhost:3000/movies
+
+### Test DELETE Request
+DELETE http://localhost:3000/movies/12341234
+
+### Test Patch Request
+PATCH http://localhost:3000/movies/123123
