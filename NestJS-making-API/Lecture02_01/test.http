@@ -11,11 +11,28 @@ DELETE http://localhost:3000/movies/12341234
 PATCH http://localhost:3000/movies/123123
 
 ### Test POST with body
-
 POST http://localhost:3000/movies
-Content-Type: "application/json"
+Content-Type: application/json
 
 {
     "name" : "Tenet",
     "director" : "Nolan"
-};
+}
+
+### Test Patch with Param and Body
+PATCH http://localhost:3000/movies/123123
+Content-Type: application/json
+
+{
+    "name" : "Tenet",
+    "director" : "Nolan"
+}
+
+### Test GET with Query param
+GET http://localhost:3000/movies/search?year=2000
+Content-Type: application/json
+
+{
+    "name" : "Tenet",
+    "director" : "Nolan"
+}
