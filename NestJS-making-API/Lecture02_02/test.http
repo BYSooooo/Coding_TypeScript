@@ -36,3 +36,16 @@ Content-Type: application/json
     "name" : "Tenet",
     "director" : "Nolan"
 }
+
+### Test GET via Controller and Service
+GET http://localhost:3000/movies
+
+### Test POST via Controller and Service
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "title" : "Tenet",
+    "year" : 2020,
+    "genres" : ["action", "mind blown"]
+}
