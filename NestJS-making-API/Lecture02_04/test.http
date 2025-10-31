@@ -67,3 +67,10 @@ Content-Type: application/json
     ]
 }
 
+### Test POST for Validation Check
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "hacked" : "by me"
+}
