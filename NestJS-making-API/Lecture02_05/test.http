@@ -74,3 +74,12 @@ Content-Type: application/json
 {
     "hacked" : "by me"
 }
+
+### Test Patch with PartialType
+PATCH http://localhost:3000/movies/1
+Content-Type: application/json
+
+{
+    "title" : "Tenet-Modified",
+    "year" : 2025
+}
