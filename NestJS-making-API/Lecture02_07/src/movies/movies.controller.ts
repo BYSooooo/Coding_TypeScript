@@ -11,7 +11,7 @@ export class MoviesController {
 
     @Get()
     getAll(@Req() req, @Res() res) : Movie[]{
-        
+        res.json()
         return this.moviesService.getAll();
     }
 
