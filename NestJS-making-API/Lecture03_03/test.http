@@ -1,0 +1,85 @@
+### Test Parameter in GET Request
+GET http://localhost:3000/movies/123123123
+
+### Test POST Request
+POST http://localhost:3000/movies
+
+### Test DELETE Request
+DELETE http://localhost:3000/movies/12341234
+
+### Test Patch Request
+PATCH http://localhost:3000/movies/123123
+
+### Test POST with body
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "name" : "Tenet",
+    "director" : "Nolan"
+}
+
+### Test Patch with Param and Body
+PATCH http://localhost:3000/movies/123123
+Content-Type: application/json
+
+{
+    "name" : "Tenet",
+    "director" : "Nolan"
+}
+
+### Test GET with Query param
+GET http://localhost:3000/movies/search?year=2000
+Content-Type: application/json
+
+{
+    "name" : "Tenet",
+    "director" : "Nolan"
+}
+
+### Test GET via Controller and Service
+GET http://localhost:3000/movies
+
+### Test POST via Controller and Service
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "title" : "Tenet",
+    "year" : 2020,
+    "genres" : ["action", "mind blown"]
+}
+
+### Test GET with Not Found Exception
+GET http://localhost:3000/movies/123123123
+
+### Test UPDATE
+PATCH http://localhost:3000/movies/1
+Content-Type: application/json
+
+{
+    "id" : 1,
+    "title" : "Tenet Modified",
+    "year" : "2024",
+    "genres" : [
+        "action",
+        "fantasy"
+    ]
+}
+
+### Test POST for Validation Check
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "hacked" : "by me"
+}
+
+### Test Patch with PartialType
+PATCH http://localhost:3000/movies/1
+Content-Type: application/json
+
+{
+    "title" : "Tenet-Modified",
+    "year" : 2025
+}
